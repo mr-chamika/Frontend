@@ -14,7 +14,7 @@ function MainPage(){
 
         e.preventDefault();
 
-        const response = await axios.get("https://backend-2-jiaf.onrender.com/convert",{params:{date,sourceCurrency,tCurrency,amount,},});
+        const response = await axios.get("https://backend-3-xsj7.onrender.com/convert",{params:{date,sourceCurrency,tCurrency,amount,},});
 
         setFinalPrice(response.data);
 
@@ -27,7 +27,7 @@ function MainPage(){
 
             try{
                 
-              const responce = await axios.get("https://backend-2-jiaf.onrender.com/getAllCurrency",{
+              const responce = await axios.get("https://backend-3-xsj7.onrender.com/getAllCurrency",{
 
                 params:{date,sourceCurrency,tCurrency,amount}
 
